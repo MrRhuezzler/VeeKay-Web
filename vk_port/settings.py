@@ -119,6 +119,7 @@ USE_L10N = True
 USE_TZ = True
 
 DEFAULT_FILE_STORAGE = 'storages.backends.dropbox.DropBoxStorage'
+DROPBOX_TIMEOUT = 1000
 
 DROPBOX_OAUTH2_TOKEN = os.environ.get("AUTH_TOKEN")
 
