@@ -63,6 +63,8 @@ def songView(request, typ, pk):
         work = {
             'coverPhoto' : work_model.coverPhoto.url,
             'author' : author,
+            'genre' : work_model.genre,
+            'release_year' : work_model.release_year,
             'title' : work_model.title,
             'songs' : songs_in_album,
             'artists' : [work_model.author] + list(artists)
@@ -121,6 +123,8 @@ def songView(request, typ, pk):
         work = {
             'coverPhoto' : work_model.coverPhoto.url,
             'author' : author,
+            'genre' : work_model.genre,
+            'release_year' : work_model.release_year,
             'title' : work_model.title,
             'songs' : songs_in_album,
             'artists' : [work_model.author] + list(artists)
