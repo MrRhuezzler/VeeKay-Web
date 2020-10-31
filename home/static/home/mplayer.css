@@ -1,0 +1,155 @@
+.mplayer{
+	position: fixed;
+	bottom: 5%;
+	left: 50%;
+	transform: translate(-50%, 0);
+	-webkit-transform: translate(-50%, -0);
+	-moz-transform: translate(-50%, 0);
+	-o-transform: translate(-50%, -0);
+	-ms-transform: translate(-50%, -0);
+}
+
+.mplayer-details{
+	position: absolute;
+	width: 90%;
+	left: 30px;
+	top: -60%;
+}
+
+.mplayer-cover{
+	position: absolute;
+
+}
+
+.mplayer-cover img{
+	width: 120px;
+	height: 120px;
+	box-sizing: border-box;
+	padding: 10px;
+
+	background: white;
+	border-radius: 50%;
+
+	-webkit-box-shadow: 11px 11px 28px -7px rgba(0,0,0,0.85); 
+	box-shadow: 11px 11px 28px -7px rgba(0,0,0,0.85);
+}
+
+.mplayer-title{
+	position: absolute;
+	left: 120px;
+	top:5px;
+	margin-left: 40px;
+
+	color: rgb(114, 114, 114);
+	font-size: 30px;
+
+	width:270px;
+	height: 30px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+
+.mplayer-artist{
+	position: absolute;
+	left: 120px;
+	margin-left: 45px;
+	top: 40px;
+
+	font-size: 15px;
+	color:rgb(114, 114, 114);
+
+	width:200px;
+	height: 30px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+
+.mplayer-controls{
+	width: 600px;
+	height: 100px;
+	background: white;
+	border-radius: 10px;
+
+	-webkit-box-shadow: 11px 11px 28px -7px rgba(0,0,0,0.85); 
+	box-shadow: 11px 11px 28px -7px rgba(0,0,0,0.85);
+}
+
+.mplayer-buttons{
+	display: flex;
+	position: absolute;
+	top: 0px;
+	right: 0%;
+}
+
+.mplayer-buttons div{
+	margin: 0 3px;
+}
+
+.mplayer-buttons div:hover{
+	transform: translateY(-5px);
+}
+
+.mplayer-buttons div i{
+	font-size: 20px;
+	text-shadow: 5px 5px 10px #ACACAC;
+	color: #2A2A2A;
+}
+
+.mplayer-buttons div:hover i{
+	text-shadow: 5px 10px 10px #ACACAC;
+}
+
+.mplayer-seekbar{
+	position: absolute;
+	bottom: 15px;
+
+	width: 90%;
+	left: 50%;
+
+	transform: translate(-50%, 0);
+	-webkit-transform: translate(-50%, 0);
+	-moz-transform: translate(-50%, 0);
+	-o-transform: translate(-50%, 0);
+	-ms-transform: translate(-50%, 0);
+}
+
+.seekbar{
+
+	background: #C4C4C4;
+	height: 7px;
+	border-radius: 5px;
+	z-index: 1;
+}
+
+.seekbar-current{
+
+	background: #2B2B2B;
+	height: 7px;
+	width: 20%;
+	border-radius: 5px;
+	position: absolute;
+	z-index: 3;
+}
+
+.seekbar-hover{
+	background: #2B2B2B;
+	opacity: .5;
+	height: 7px;
+	width: 40%;
+	border-radius: 5px;
+	position: absolute;
+	z-index: 2;
+}
+
+.seekbar-curr-time{
+	position: absolute;
+	bottom: 20px;
+}
+
+.seekbar-dur-time{
+	position: absolute;
+	bottom: 20px;
+	right: 0;
+}

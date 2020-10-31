@@ -1,0 +1,84 @@
+
+{% extends "./base.html" %}
+{% block content %}
+
+<div class="container">
+    <div class="top-section">
+        <div class="cover-img">
+            <img class="coverpic" src="{{ work.coverPhoto }}" alt="dusk till dawn" />
+        </div>
+        <div class="song">
+            <div class="song-details">
+                <div>
+                    <h1 class="main-title">{{ work.title }}</h1>
+                    <p class="sub-title">By {{ work.author }}</p>
+                    <hr>
+                </div>
+                <div>
+                    <p class="sub-title-2">Pop<span class="dot"></span>2017</p>
+                </div>
+            </div>
+            <div class="song-list">
+                <table>
+                    <tr class="table-head">
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Artists</th>
+                        <!-- <th>Duration</th> -->
+                    </tr>
+                    {% for song in work.songs %}
+                        <tr>
+                            <td>{{ song.index }}</td>
+                            <td>{{ song.title }}</td>
+                            <td>{{ song.artists|join:" , " }}</td>
+                            <!-- <td>5:38</td> -->
+                        </tr>
+                    {% endfor %}
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="bot-section">
+            <div class="artist-section">
+                <h1 class="artist-title">Artists</h1>
+                <div class="singers">
+                    {% for artist in work.artists %}
+                        <div class="singer">
+                            <img class="profilepic" src="{{ artist.profilePic.url }}" alt="Zayn"/>
+                            <p class="singer-name">{{ artist.penName }}</p>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+    </div>
+
+    <div class="music-file">
+        <div class="music-head">
+            <h1>More Like This</h1>
+        </div>
+        <div class="music-accordion">
+            <div class="music-tmbnl">
+                {% for work in more_like_this %}
+                    {% with type=work.typ id=work.song.id %}
+                    <a href = "{% url 'song-view' type id %}">
+                        <div class='tmbnl'>			
+                                <img class='tmbnl-cover' alt ='reputation' src="{{ work.song.coverPhoto.url }}">	
+                            <div class='play-btn'>
+                                <i class="fa fa-play"></i>
+                            </div>
+                            <div class="tmbnl-head">
+                                {{work.song.title}}<br> 
+                                ( {{work.typ | title}} )
+                            </div>	
+                        </div>
+                    </a>
+                    {% endwith %}
+                {% endfor %}
+            </div>
+        </div>			
+    </div>
+
+</div>
+
+{% endblock content %}

@@ -1,0 +1,171 @@
+.container{
+    margin-top: 10px;
+}
+
+.top-section{
+    display: flex;
+    border: white solid 2px;
+    box-sizing: border-box;
+}
+
+.cover-img{
+    border: white solid 2px;
+    box-sizing: border-box;
+}
+
+.coverpic{
+    width : 450px;
+    height: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+    margin: 1px;
+}
+
+.song{
+    background-color: #c3cbdc;
+    background-image: linear-gradient(147deg, #c3cbdc 0%, #edf1f4 74%);
+    opacity: 0.9;
+    height: 455px;
+    width: 100%;
+    box-shadow: 2px 2px 20px 2px black;
+}
+
+.dot{
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: black;
+    margin: 5px 5px 2px 5px;
+}
+
+.main-title{
+    color: black;
+    font-weight: bold;
+    margin-left: 0px;
+    margin-bottom: 5px;
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Questrial', sans-serif;
+}
+
+.sub-title{
+    color: black;
+    opacity: 0.5;
+    margin-left: 0px;
+    font-size: large;
+    margin-top: 0px;
+    text-align: center;
+    padding-bottom: 0px;
+    font-family: 'Questrial', sans-serif;
+}
+
+hr{
+    border-color: black;
+    border-width: 1px;
+    background-color: black;
+    max-width: 65px;
+}
+
+.sub-title-2{
+    color: black;
+    opacity: 1;
+    margin-left: 0px;
+    font-size: large;
+    margin-top: 0px;
+    text-align: center;
+    font-family: 'Questrial', sans-serif;
+}
+
+table{
+    border-collapse: collapse;
+    margin: 1px;
+    width: 100%;
+    font-family: 'Questrial', sans-serif;
+}
+
+th,td{
+    padding:10px;
+    border-bottom: solid 1px black;
+}
+
+tr:hover{
+    background-color: black;
+    opacity: 0.9;
+    color: white;
+}
+
+th{
+    text-align: left;
+    color:black;
+    pointer-events: none;
+}
+
+.singers{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.artist-title{
+    color: black;
+    font-size: xx-large;
+    font-weight: bold;
+    font-family: 'Questrial', sans-serif;
+    text-align: center;
+}
+
+.bot-section{
+    border: white solid 2px;
+    width: 100%;
+    background-color: #c3cbdc;
+    background-image: linear-gradient(147deg, #c3cbdc 0%, #edf1f4 74%);
+    opacity: 0.9;
+    box-shadow: 2px 2px 20px 2px black;
+}
+
+.singer{
+    width: 100px;
+    padding: 5px;
+}
+
+.profilepic{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 10px;
+    margin-top: 10px;
+    border: solid white 2px;
+    box-shadow: 5px 5px 10px 2px;
+}
+
+.profilepic:hover{
+    transition: all ease 0.3s;
+    transform: scale(1.1);
+    box-shadow: 8px 8px 40px 1px black;
+}
+
+.singer-name{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-family: 'Questrial', sans-serif;
+}
+
+.other-section{
+    border: 2px solid white;
+    margin-top: 20px;
+    background-color: #c3cbdc;
+    background-image: linear-gradient(147deg, #c3cbdc 0%, #edf1f4 74%);
+    box-shadow: 2px 2px 20px 2px black;
+}
+
+.morelikethis{
+    color: black;
+    margin-left: 30px;
+    font-size: xx-large;
+    font-weight: bold;
+    font-family: 'Questrial', sans-serif;
+}
+

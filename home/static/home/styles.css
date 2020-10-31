@@ -1,0 +1,121 @@
+:root{
+	/*Variables*/
+	--bgColor: #14274e;
+	--midColor: #f1f6f9;
+	--headColor: #394867;
+	--textColor: #6e7a8f;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+
+@media only screen and (max-width:600px) {
+    html{
+      width: 100vw;
+      overflow-x: hidden;
+	}
+	
+	body{
+		overflow-x: hidden;
+	}
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	background: var(--bgColor);
+	color: var(--textColor);
+	font-family: 'Questrial', sans-serif;
+}
+
+.main-content{
+	width: 60vw;
+	
+	padding: 10px 20px 10px 20px;
+	position: relative;
+	top: 0;
+	
+	margin: 0 20vw;
+}
+.main-content::after{
+	content: "";
+	margin: 20px;
+}
+
+h1{
+	color: var(--headColor);
+}
+
+#first-letter{
+	font-size: 300%;
+	font-weight: bold;
+	float: left;
+	padding-right: 5px;
+}
+
+a{
+	text-decoration: none;
+	color: var(--textColor)
+}
+
+@media screen and (max-width: 600px) {
+	.main-content{
+		width: 100%;
+		margin: 0 ;
+		padding: 0;
+	}
+	
+}
+
+.welcome{
+	position: relative;
+	background: var(--midColor);
+	padding: 10px;
+}
+
+.music-file{
+	position: relative;
+	background: var(--midColor);
+	padding: 10px;
+}
+
+.about-me{
+	position: relative;
+	background: var(--midColor);
+	padding: 10px;
+}
+
+.about-img{
+	background-image: url('/static/home/images/profile.jpg');
+	background-size: cover;
+	background-position: 50% 70%;
+	height: 400px;
+	margin: 20px auto;
+}
+
+.about-text{
+	font-size: large;
+}
+.tt {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tt .ttt {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.tt:hover .ttt {
+  visibility: visible;
+}

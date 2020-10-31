@@ -1,0 +1,26 @@
+{% load static %}
+<div class="mplayer">
+
+	<div class="mplayer-details">
+		<div class="mplayer-cover">
+            <img src="{% static 'home/images/thumbnails/tbn3.jpg' %}">
+        </div>			
+	</div>
+
+	<div class="mplayer-controls">
+		<div class="mplayer-title">Rock Bottom</div>
+		<div class="mplayer-artist">Hailee Steinfeld</div>
+		<div class="mplayer-buttons">
+			<div id="mplayer-prev" onclick="prevTrack()"><i class="fa fa-backward"></i></div>
+			<div id="mplayer-play" onclick="playpauseTrack()"><i class="fa fa-play" id="play-pause"></i></div>
+			<div id="mplayer-next" onclick="nextTrack()"><i class="fa fa-forward"></i></div>
+		</div>
+		<div class="mplayer-seekbar">
+			<div class="seekbar-curr-time">00:00</div>
+			<div class="seekbar-dur-time">00:00</div>
+			<div class="seekbar-current"></div>
+			<!-- <div class="seekbar-hover"></div> -->
+			<div class="seekbar"></div>
+		</div>
+	</div>
+</div>

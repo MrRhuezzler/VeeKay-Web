@@ -1,0 +1,104 @@
+:root{
+    --side:150px;
+}
+
+.music-tmbnl{
+    display: flex;
+    width: 100%;
+}
+
+.tmbnl{
+    width: var(--side);
+    height: var(--side);
+    margin: 0 7px;
+    position: relative;
+    
+    border-radius: 10px;
+    
+    -webkit-box-shadow: 5px 6px 14px 0px rgba(50, 50, 50, 0.59);
+    -moz-box-shadow:    5px 6px 14px 0px rgba(50, 50, 50, 0.59);
+    box-shadow:         5px 6px 14px 0px rgba(50, 50, 50, 0.59);
+}
+
+.tmbnl img{
+    width: var(--side);
+    height: var(--side);
+    
+    border-radius: 10px;
+}
+
+.tmbnl-head{
+    display: none;
+    opacity: 0;
+    
+    transition: opacity 3s;
+    
+    position: absolute;
+    bottom: 13px;
+    left: 53px;
+    color: rgb(196, 196, 196);
+    font-size: 100%;
+    font-weight: 700;
+}
+
+.tmbnl:hover .tmbnl-head{
+    display: block;
+    opacity: 1;
+}
+
+.play-btn{
+    display: none;
+    
+    background: #dedede;
+    border-radius: 50%;
+    text-align: center;
+    
+    line-height: 20px;
+    font-size:20px;
+    font-weight:bold;
+    
+    width: 40px;
+    height: 40px;
+    
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    
+    cursor: pointer;
+}
+
+.play-btn i{
+    color: var(--bgColor);
+    margin: 0;
+    padding: 10px 10px 10px 12px;
+    
+}
+
+.tmbnl:hover .play-btn{
+    display: block;
+}
+
+.play-btn:hover{
+    background: var(--bgColor);
+}
+
+.play-btn:hover i{
+    color: #dedede;
+}
+
+.tmbnl:before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 0%;
+    width: 100%;
+    bottom: 0;
+    transition: height 0.3s ease-out;
+    
+    border-radius: 10px;
+    background: linear-gradient(to bottom, transparent 40%, var(--bgColor) 100%);
+}
+
+.tmbnl:hover:before {
+    height: 100%;
+}

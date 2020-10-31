@@ -1,0 +1,1 @@
+web: gunicorn vk_port.wsgi

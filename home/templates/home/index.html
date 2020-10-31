@@ -1,0 +1,58 @@
+{% extends "./base.html" %}
+{% block content %}
+	
+<div class="image-accordion">
+	<ul>
+		<li class="img img-1"><span class="img-caption">Microphone</span></li>
+		<li class="img img-2"><span class="img-caption">Strings</span></li>
+		<li class="img img-3"><span class="img-caption">Performance</span></li>
+		<li class="img img-4"><span class="img-caption">Percussions</span></li>
+		<li class="img img-5"><span class="img-caption">Acoustic</span></li>
+	</ul>
+</div>
+<div class="welcome">
+	<h1>Welcome</h1>
+</div>
+<div class="about-me" id="about-div">
+	<div class="about-head">
+		<h1>About me</h1>
+	</div>
+	<div class="about-img"></div>
+	<div class="about-text">
+		<span id="first-letter">L</span>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</div>
+</div>
+<div class="music-file">
+	<div class="music-head">
+		<h1>Works</h1>
+	</div>
+	<div class="music-accordion">
+		<div class="music-tmbnl">
+			{% for work in works %}
+				{% with type=work.typ id=work.song.id %}
+				<a href = "{% url 'song-view' type id %}">
+					<div class='tmbnl'>			
+							<img class='tmbnl-cover' alt ='reputation' src="{{ work.song.coverPhoto.url }}">	
+						<div class='play-btn'>
+							<i class="fa fa-play"></i>
+						</div>
+						<div class="tmbnl-head">
+							{{work.song.title}}<br> 
+							( {{work.typ | title}} )
+						</div>	
+					</div>
+				</a>
+				{% endwith %}
+			{% endfor %}
+		</div>
+	</div>			
+</div>
+
+
+
+{% endblock content %}

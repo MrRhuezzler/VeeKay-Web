@@ -1,0 +1,77 @@
+.contact-me{
+	background: var(--headColor);
+	min-height: 200px;
+	height:100%;
+	position: relative;
+	padding: 10px 0 170px 0;
+	width: 100%;
+}
+
+.contact-box{
+	width: 60vw;
+	margin: 0 auto;
+}
+
+.contact-head h1{
+	color: var(--midColor);
+}
+
+.contact-left{
+	position: absolute;
+}
+
+.contact-right{
+	position: absolute;
+	left: 50%;
+}
+
+@media screen and (max-width: 600px) {
+	.contact-box{
+		width: 100vw;
+		margin: 10px;
+	}
+	
+	.contact-left{
+		position: relative;
+	}
+	
+	.contact-right{
+		position: relative;
+		left: 0%;
+	}
+	
+	
+}
+
+.fa{
+	margin: 5px;
+	margin-right: 10px;
+	padding: 10px;
+	color: white;
+	border-radius: 50%;
+}
+
+.fa-instagram{
+	background: #e1306c;
+}
+
+.fa-facebook-square{
+	background: #3b5998;
+}
+
+.fa-twitter{
+	background: #1da1f2;
+}
+
+.fa-whatsapp{
+	background: #25d366;
+}
+.fa-spotify{
+	background: #1db954;
+}
+
+.fa-linkedin{
+	background: #0077b5;
+}
+
+

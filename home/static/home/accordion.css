@@ -1,0 +1,76 @@
+.image-accordion{
+	margin: 0 0 10px 0;
+	position: relative;
+	height: 60vh;
+	width: 60vw;
+	top: 0;
+	left: -30px;
+}
+
+.image-accordion ul{
+	list-style: none;
+	display: flex;
+	height: 100%;
+}
+
+.image-accordion ul li{
+	flex: 1;
+	transform: skew(5deg);
+	transition: all .3s ease;
+	background-size: cover;
+	background-position: center; 
+}
+
+.image-accordion ul:hover li{
+	transform: skew(0deg);
+}
+
+.image-accordion ul li:hover{
+	flex: 5;
+}
+
+@media screen and (max-width: 600px){
+	.image-accordion{
+		width: 100vw;
+		height: 70vw;
+	}
+
+	.image-accordion ul li{
+		transform: skew(0deg);
+	}
+}
+
+.img-1{background-image: url("/static/home/images/img7.jpg");}
+.img-2{background-image: url("/static/home/images/img6.jpg");}
+.img-3{background-image: url("/static/home/images/img10.jpg");}
+.img-4{background-image: url("/static/home/images/img12.jpg");}
+.img-5{background-image: url("/static/home/images/img13.jpg");}
+
+.img-1:hover span{background-position:50% 30%;}
+.img-2:hover span{background-position: 50% 60%;}
+.img-3:hover span{background-position: 50% 50%;}
+.img-4:hover span{background-position: 50% 70%;}
+.img-5:hover span{background-position: 50% 60%;}
+
+.img:hover span{
+	transition: all ease 0.5s;
+	transform: rotate(0deg);
+}
+
+.img-caption{
+	color: white;
+	/* text-shadow: 1px 1px 2px rgb(0, 217, 255); */
+	position : absolute;
+	padding : 5px;
+	background-color: rgba(0,0,0,0.5);
+	white-space: nowrap;
+	bottom: 0;
+	left: 0;
+	transform: rotate(-90deg);
+	transform-origin: 0% 0%;
+	border: 2px solid white;
+	transition: all ease-in-out 0.5s;
+	font-size: large;
+}
+
+

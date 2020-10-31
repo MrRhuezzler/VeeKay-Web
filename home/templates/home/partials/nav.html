@@ -1,0 +1,14 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'home/nAv.css'%}">
+<script src="{% static 'home/nAv.js' %}" type="text/javascript"></script>
+<div class="topnav" id="myTopnav">
+	<a href="{{home_url}}" class="active lft"><img src="{% static 'home/images/logo.png' %}"/></a>
+	<a href="#contact-div" class="rght">Contact Us</a>
+	<a href="#about-div" class="rght">About</a>
+	<a href="{{home_url}}" class="rght">Home</a>
+	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+		<i class="fas fa-bars fa-lg"></i>
+	</a>
+</div>
+
