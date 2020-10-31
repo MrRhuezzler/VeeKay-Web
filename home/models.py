@@ -33,6 +33,8 @@ class Author(Model):
 class Single(Model):
     date_created = DateTimeField(default=timezone.now)
     title = CharField(max_length=100)
+    genre = CharField(max_length=100, default="Pop")
+    release_year = CharField(max_length=100, default="2020")
     author = ForeignKey(Author, related_name='author' ,on_delete=CASCADE)
     collabs = ManyToManyField(Author, related_name='collabs', blank=True)
     coverPhoto = ImageField(upload_to='images/singles/')
@@ -44,6 +46,8 @@ class Single(Model):
 class Album(Model):
     date_created = DateTimeField(default=timezone.now)
     title = CharField(max_length=100)
+    genre = CharField(max_length=100, default="Pop")
+    release_year = CharField(max_length=100, default="2020")
     coverPhoto = ImageField(upload_to='images/albums/')
     author = ForeignKey(Author, on_delete=CASCADE)
     songs = ManyToManyField(Single)
