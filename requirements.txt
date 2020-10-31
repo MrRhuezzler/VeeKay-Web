@@ -3,4 +3,4 @@ django-phonenumber-field[phonenumberslite]
 gunicorn
 django_heroku
 pillow
-whitenoise
+django-storages[dropbox]
