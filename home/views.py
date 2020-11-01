@@ -5,8 +5,16 @@ from django.shortcuts import render
 from django.views.generic import ListView
 from .models import Single, Album
 
-def handler404(request):
-    return render(request, 'home/404.html')
+def handler500(request, *args, **argv):
+    response = render(request, 'home/404.html', {'code' : '500', 'message' : 'Server Error'})
+    response.status_code = 500
+    return response
+
+
+def handler404(request, *args, **argv):
+    response = render(request, 'home/404.html', {'code' : '404', 'message' : 'Page not Found'})
+    response.status_code = 404
+    return response
 
 def index(request):
     works = [{'typ' : 'single', 'song' : i} for i in Single.objects.all()]
