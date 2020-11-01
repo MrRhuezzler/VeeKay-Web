@@ -10,7 +10,7 @@ def index(request):
     works += [{'typ' : 'album', 'song' : i} for i in Album.objects.all()]
 
     random.shuffle(works, lambda: random.random() )
-    works = works[:4]
+    # works = works[:4]
 
     track_list = [{'title' : i.title, 'path': i.songFile.url, 'coverPhoto' : i.coverPhoto.url, 'author' : i.author.penName} for i in Single.objects.all()]
     random.shuffle(track_list, lambda: random.random() )
@@ -34,7 +34,7 @@ def songView(request, typ, pk):
         works += [{'typ' : 'album', 'song' : i} for i in albums_by_author]
 
         random.shuffle(works, lambda: random.random())
-        works = works[:4]
+        # works = works[:4]
 
 
         track_list = []
@@ -94,7 +94,7 @@ def songView(request, typ, pk):
         works += [{'typ' : 'album', 'song' : i} for i in albums_by_author]
 
         random.shuffle(works, lambda: random.random())
-        works = works[:4]
+        # works = works[:4]
 
 
         track_list = []
