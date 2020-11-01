@@ -31,7 +31,7 @@
 	<div class="music-head">
 		<h1>Works</h1>
 	</div>
-	<div class="music-accordion">
+	<div class="music-accordion" style="overflow-x:auto;">
 		<div class="music-tmbnl">
 			{% for work in works %}
 				{% with type=work.typ id=work.song.id %}
