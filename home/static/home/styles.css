@@ -1,7 +1,7 @@
 :root{
 	/*Variables*/
 	--bgColor: #14274e;
-	--midColor:#c3cbdc;
+	--midColor: #f1f6f9;
 	--headColor: #394867;
 	--textColor: #6e7a8f;
 }
@@ -93,21 +93,18 @@ a{
 .welcome{
 	position: relative;
 	background: var(--midColor);
-	background-color: linear-gradient(147deg, #c3cbdc 0%, #edf1f4 74%);
 	padding: 10px;
 }
 
 .music-file{
 	position: relative;
 	background: var(--midColor);
-	background-color: linear-gradient(147deg, #c3cbdc 0%, #edf1f4 74%);
 	padding: 10px;
 }
 
 .about-me{
 	position: relative;
 	background: var(--midColor);
-	background-color: linear-gradient(147deg, #c3cbdc 0%, #edf1f4 74%);
 	padding: 10px;
 }
 
