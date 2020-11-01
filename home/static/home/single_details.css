@@ -155,7 +155,7 @@ th{
     font-family: 'Questrial', sans-serif;
 }
 
-.other-section{
+.music-file{
     border: 2px solid white;
     margin-top: 20px;
     background-color: #c3cbdc;
@@ -163,7 +163,7 @@ th{
     box-shadow: 2px 2px 20px 2px black;
 }
 
-.morelikethis{
+.music-head{
     color: black;
     margin-left: 30px;
     font-size: xx-large;
