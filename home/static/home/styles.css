@@ -120,6 +120,10 @@ a{
 .about-text{
 	font-size: large;
 }
+
+.music-head{
+	margin-left: 30px;
+}
 .tt {
   position: relative;
   display: inline-block;
