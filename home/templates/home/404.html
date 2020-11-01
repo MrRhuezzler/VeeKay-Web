@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>404 - Page not found</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, inital-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="{% static 'home/handler404.css' %}">
+</head>
+<body>
+	<div class="err-content">
+		<h1 class="err-head1">{{code}} !!!</h1>
+		<h2 class="err-head2">{{message}}</h2>
+		
+		<img src="{% static 'home/images/progsad.png' %}" class="err-img">
+		<div class="err-btn"><a href="{% url 'veekay-index' %}">Return to homepage</a></div>
+	</div>
+</body>
+</html>
