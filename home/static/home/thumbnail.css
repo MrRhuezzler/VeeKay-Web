@@ -4,7 +4,6 @@
 
 .music-accordion{
     overflow-x: auto;
-    scrollbar-width: thin;
 }
 
 .music-tmbnl{
@@ -15,7 +14,7 @@
 .tmbnl{
     width: var(--side);
     height: var(--side);
-    margin: 4 7px;
+    margin: 0 7px;
     position: relative;
     
     border-radius: 10px;

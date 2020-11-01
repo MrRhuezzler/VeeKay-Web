@@ -25,6 +25,7 @@ html{
 	background: var(--bgColor);
 	border-radius: 6px;
 	border: 2px solid #c3cbdc ;
+	scrollbar-width: thin;
   }
   
   /* Handle on hover */
