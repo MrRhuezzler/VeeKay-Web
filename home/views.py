@@ -5,7 +5,7 @@ from django.shortcuts import render
 from django.views.generic import ListView
 from .models import Single, Album
 
-def _404(request):
+def handler404(request):
     return render(request, 'home/404.html')
 
 def index(request):
