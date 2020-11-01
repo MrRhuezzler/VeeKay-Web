@@ -93,21 +93,21 @@ a{
 .welcome{
 	position: relative;
 	background: var(--midColor);
-	background-image: linear-gradient(147deg, #c3cbdc 0%, #edf1f4 74%);
+	background-color: linear-gradient(147deg, #c3cbdc 0%, #edf1f4 74%);
 	padding: 10px;
 }
 
 .music-file{
 	position: relative;
 	background: var(--midColor);
-	background-image: linear-gradient(147deg, #c3cbdc 0%, #edf1f4 74%);
+	background-color: linear-gradient(147deg, #c3cbdc 0%, #edf1f4 74%);
 	padding: 10px;
 }
 
 .about-me{
 	position: relative;
 	background: var(--midColor);
-	background-image: linear-gradient(147deg, #c3cbdc 0%, #edf1f4 74%);
+	background-color: linear-gradient(147deg, #c3cbdc 0%, #edf1f4 74%);
 	padding: 10px;
 }
 
