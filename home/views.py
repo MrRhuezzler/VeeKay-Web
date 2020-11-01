@@ -5,6 +5,9 @@ from django.shortcuts import render
 from django.views.generic import ListView
 from .models import Single, Album
 
+def _404(request):
+    return render(request, 'home/404.html')
+
 def index(request):
     works = [{'typ' : 'single', 'song' : i} for i in Single.objects.all()]
     works += [{'typ' : 'album', 'song' : i} for i in Album.objects.all()]

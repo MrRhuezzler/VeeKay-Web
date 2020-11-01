@@ -13,7 +13,7 @@
 		<h2 class="err-head2">Page not found</h2>
 		
 		<img src="{% static 'home/images/progsad.png' %}" class="err-img">
-		<div class="err-btn"><a href="{{home_url}}">Return to homepage</a></div>
+		<div class="err-btn"><a href="{% url 'veekay-index' %}">Return to homepage</a></div>
 	</div>
 </body>
 </html>
