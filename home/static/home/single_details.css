@@ -157,7 +157,9 @@ th{
 
 .music-file{
     background-color: #c3cbdc;
+    margin-top: 20px;
     background-image: linear-gradient(147deg, #c3cbdc 0%, #edf1f4 74%);
+
 }
 
 .music-head{
