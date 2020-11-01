@@ -168,3 +168,7 @@ th{
     font-family: 'Questrial', sans-serif;
 }
 
+.more-like-this-section{
+    background-color: #c3cbdc; 
+    background-image: linear-gradient(147deg, #c3cbdc 0%, #edf1f4 74%);
+}
