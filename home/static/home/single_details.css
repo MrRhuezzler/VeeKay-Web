@@ -27,6 +27,8 @@
     opacity: 0.9;
     height: 455px;
     width: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
     box-shadow: 2px 2px 20px 2px black;
 }
 
