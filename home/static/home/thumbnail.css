@@ -2,6 +2,11 @@
     --side:150px;
 }
 
+.music-accordion{
+    overflow-x: auto;
+    scrollbar-width: thin;
+}
+
 .music-tmbnl{
     display: flex;
     width: 100%;
@@ -10,7 +15,7 @@
 .tmbnl{
     width: var(--side);
     height: var(--side);
-    margin: 0 7px;
+    margin: 4 7px;
     position: relative;
     
     border-radius: 10px;

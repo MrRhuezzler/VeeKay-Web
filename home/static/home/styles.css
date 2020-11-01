@@ -49,7 +49,6 @@ body{
 	background: var(--bgColor);
 	color: var(--textColor);
 	font-family: 'Questrial', sans-serif;
-	scrollbar-width: thin;
 }
 
 .main-content{
