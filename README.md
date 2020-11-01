@@ -1,4 +1,3 @@
-# VeeKay-Web
-## [Click Here for a Live Preview](https://veekay-web.herokuapp.com/)
+# [VeeKay-Web](https://veekay-web.herokuapp.com/)
 ## Look
 ![Look](/images/portfolio.jpg)
